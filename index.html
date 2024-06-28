@@ -6,10 +6,187 @@
     <title>Dasboard</title>
     <link rel="stylesheet" href="src/output.css">
     <!-- npx tailwindcss -i ./CSS/Style.css -o ./src/output.css --watch -->
-</head>
-<body>
-    
 
+</head>
+<body class="p-0 m-0 box-border font-roboto">
+
+    <div class="bg-gray-200 h-screen">
+
+        <div class="flex px-4 py-2 w-full justify-between items-center bg-slate-50">
+            <h1 class="text-4xl font-bold text-green-600">Brand.</h1>
+            <div class="w-1/2">
+                <input class="border rounded px-8 w-full bg-gray-100" type="search" name="" id="">
+                <!-- <box-icon name='search-alt-2'></box-icon> -->
+            </div>
+
+            <div class="flex items-center">
+                <box-icon type='solid' name='bell-ring'></box-icon>
+                <img class="w-10 h-10 rounded-full" src="img/img1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2fr-auto h-[91%] w-full">
+
+
+            <!-- premiere colonne -->
+
+            <div class="bg-green-700 p-4 pt-8">
+                <ul>
+                    <li class="text-xl text-slate-50 mb-6">
+                        <a href="#" class="flex items-center">
+                            <div class="flex items-center mr-2">
+                                <ion-icon class="" name="grid-sharp"></ion-icon>
+                            </div>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="text-xl text-slate-50 mb-6">
+                        <a href="#" class="flex items-center">
+                            <div class="flex items-center mr-2">
+                                <ion-icon name="settings-outline"></ion-icon>
+                            </div>
+                            Students
+                        </a>
+                    </li>
+
+                    <li class="text-xl text-slate-50 mb-6">
+                        <a href="#" class="flex items-center">
+                            <div class="flex items-center mr-2">
+                                <ion-icon class="" name="grid-sharp"></ion-icon>
+                            </div>
+                            Teachers
+                        </a>
+                    </li>
+
+                    <li class="text-xl text-slate-50 mb-6">
+                        <a href="#" class="flex items-center">
+                            <div class="flex items-center mr-2">
+                                <ion-icon class="" name="grid-sharp"></ion-icon>
+                            </div>
+                            Employes
+                        </a>
+                    </li>
+
+                    <li class="text-xl text-slate-50 mb-6">
+                        <a href="#" class="flex items-center">
+                            <div class="flex items-center mr-2">
+                                <ion-icon class="" name="grid-sharp"></ion-icon>
+                            </div>
+                            Analytics
+                        </a>
+                    </li>
+
+                    <li class="text-xl text-slate-50 mb-6">
+                        <a href="#" class="flex items-center">
+                            <div class="flex items-center mr-2">
+                                <ion-icon class="" name="grid-sharp"></ion-icon>
+                            </div>
+                            Eamnigs
+                        </a>
+                    </li>
+
+                    <li class="text-xl text-slate-50 mb-6">
+                        <a href="#" class="flex items-center">
+                            <div class="flex items-center mr-2">
+                                <ion-icon name="settings-sharp"></ion-icon>
+                            </div>
+                            Settings
+                        </a>
+                    </li>
+
+                    <li class="text-xl text-slate-50 mb-6">
+                        <a href="#" class="flex items-center">
+                            <div class="flex items-center mr-2">
+                                <ion-icon name="help-sharp"></ion-icon>
+                            </div>
+                           Help
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <!-- deuxieme colonne  -->
+
+            <div class="px-2 pt-2">
+
+                <div class="flex justify-between">
+                    <div class="flex items-center border w-1/3 mr-2 bg-slate-50 shadow-md p-6 rounded">
+                        <div class="">
+                            <h1 class="text-2xl font-bold text-green-500">1217</h1>
+                            <p class="text-gray-400">Students</p>
+                        </div>
+                        <div class="flex justify-end w-full text-4xl">
+                            <ion-icon class="text-green-700" name="person-add-sharp"></ion-icon>
+                        </div>
+                    </div>
     
+                    <div class="flex items-center border w-1/3 mr-2 bg-slate-50 shadow-md p-6 rounded">
+                        <div class="">
+                            <h1 class="text-2xl font-bold text-green-500">1217</h1>
+                            <p class="text-gray-400">Students</p>
+                        </div>
+                        <div class="flex justify-end w-full text-4xl">
+                            <ion-icon class="text-green-700" name="person-add-sharp"></ion-icon>
+                        </div>
+                    </div>
+    
+                    <div class="flex items-center border w-1/3 mr-2 bg-slate-50 shadow-md p-6 rounded">
+                        <div class="">
+                            <h1 class="text-2xl font-bold text-green-500">1217</h1>
+                            <p class="text-gray-400">Students</p>
+                        </div>
+                        <div class="flex justify-end w-full text-4xl">
+                            <ion-icon class="text-green-700" name="person-add-sharp"></ion-icon>
+                        </div>
+                    </div>
+    
+                    <div class="flex items-center border w-1/3 bg-slate-50 shadow-md p-6 rounded">
+                        <div class="">
+                            <h1 class="text-2xl font-bold text-green-500">1217</h1>
+                            <p class="text-gray-400">Students</p>
+                        </div>
+                        <div class="flex justify-end w-full text-4xl">
+                            <ion-icon class="text-green-700" name="person-add-sharp"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- les grids pour les graphiques -->
+
+                <div class="grid grid-cols-grid-chart gap-4 w-full mt-2">
+
+                    <div class="bg-slate-50 rounded-md p-4">
+                        <h1 class="text-2xl font-bold mb-2">Earnings (past 12months)</h1>
+                        <canvas id="chart1"></canvas>
+                    </div>
+
+                    <div class="bg-slate-50 rounded-md">
+                        <h1 class="text-2xl font-bold p-4 mb-2">Employees</h1>
+                        <!-- <canvas id="chart2"></canvas> -->
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+
+
+    <!-- le lien des icones -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- le lien pour le chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- le lien pour le fichier -->
+    <script src="charts.js"></script>
 </body>
 </html>
