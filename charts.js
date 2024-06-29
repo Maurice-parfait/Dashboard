@@ -6,7 +6,7 @@ new Chart(chart1, {
     labels: ['jav', 'fer', 'mars', 'avriel', 'main', 'juin', 'jullet', 'aut', 'sep', 'oct', 'nov', 'dec'],
     datasets: [{
       label: '# of Votes',
-      data: [127, 197, 300, 500, 200, 900],
+      data: [1270, 400, 800, 1000, 800, 400, 700, 600, 1000, 1200, 900, 700],
       borderWidth: 1
     }]
   },
@@ -22,10 +22,10 @@ const chart2 = document.getElementById('chart2');
 new Chart(chart2, {
   type: 'doughnut',
   data: {
-    labels: ['jav', 'fer', 'mars'],
+    labels: ['jav', 'fer', 'mars', 'avril', 'main', 'juin'],
     datasets: [{
       label: '# of Votes',
-      data: [127, 197, 300,],
+      data: [197, 300, 400, 200],
       borderWidth: 1
     }]
   },
